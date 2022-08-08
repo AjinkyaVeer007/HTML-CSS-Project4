@@ -7,14 +7,15 @@ body{
     font-family: 'Poppins';
 }
 
-.navbar-container{
-    margin: 50px;
+.navbar-container svg{
+    display: none;
 }
 
 .navbar-container{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin: 50px;
 }
 
 .list{
@@ -55,6 +56,7 @@ color: #8f8f8f;
 .banner-container>div>img{
     margin-top: 3%;
     margin-left: auto;
+    
 }
 
 .banner-container{
@@ -90,5 +92,57 @@ color: #8f8f8f;
 .nav-button{
     font-size: 15px;
     font-family: 'Poppins';
+}
+
+@media screen and (max-width : 950px){
+    .grow-list{
+        display: none;
+    }
+
+    .button-group{
+        display: none;
+    }
+
+    .navbar-container img{
+        width: 100px;
+    }
+    .navbar-container{
+        margin: 25px;
+    }
+
+    .navbar-container svg{
+        display: block;
+        margin-left: auto;
+    }
+
+    .banner-container{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .banner-container img{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .heading-text{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 20px;
+        margin: 0px 10px;
+    }
+
+    .description {
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-container button{
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin-top: 10%;
+        margin-left: 30%;
+    }    
+
 }
 
